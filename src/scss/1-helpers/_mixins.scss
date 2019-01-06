@@ -5,7 +5,19 @@
 @mixin transition($property) {
 	-webkit-transition: all $property ease-in-out;
 	-moz-transition: all $property ease-in-out;
+  -ms-transition: all $property ease-in-out;
+  -o-transition: all $property ease-in-out;
 	transition: all $property ease-in-out;
+}
+
+// ------------------------------------------------------------------
+// OPACITY
+// ------------------------------------------------------------------
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
 }
 
 // ------------------------------------------------------------------
