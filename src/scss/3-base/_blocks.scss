@@ -3,43 +3,30 @@
 // ------------------------------------------------------------------
 
 .block-left {
-	float: left;
-	@include breakpoint(sm) {
-		float: none;
-		margin-bottom: 2em;
+	margin-bottom: 2em;
+	height: 100px;
+	background: #eaeaea;
+	@include breakpoint-mobile-first(sm) {
+		float: left;
+		padding-right: px-to-pc(25px);
+		margin-bottom: 0;
 	}
 }
 .block-right {
-	float: right;
-	@include breakpoint(sm) {
-		float: none;
+	height: 100px;
+	background: #d5d5d5;
+	@include breakpoint-mobile-first(sm) {
+		float: right;
+		padding-left: px-to-pc(25px);
 	}
 }
-.block-left {
-	padding-right: px-to-pc(25px);
-	@include breakpoint(sm) {
-		padding-right: 0;
-	}
-}
-.block-right {
-	padding-left: px-to-pc(25px);
-	@include breakpoint(sm) {
-		padding-left: 0;
-	}
-}
-@for $i from 1 through 9 {
-	.block-left.left-#{$i * 10} {
-		width: $i * 10%;
-		@include breakpoint(sm) {
-			width: 100%;
+@include breakpoint-mobile-first(sm) {
+	@for $i from 1 through 10 {
+		.block-left.left-#{$i * 10} {
+			width: $i * 10%;
 		}
-	}
-}
-@for $i from 1 through 9 {
-	.block-right.right-#{$i * 10} {
-		width: $i * 10%;
-		@include breakpoint(sm) {
-			width: 100%;
+		.block-right.right-#{$i * 10} {
+			width: $i * 10%;
 		}
 	}
 }
