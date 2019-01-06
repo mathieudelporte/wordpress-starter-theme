@@ -10,24 +10,37 @@ a.button {
 	font-size: 0.8em;
 	font-weight: 700;
 	text-decoration: none;
-
-	&.main {
+	&.primary {
 		background: $color-primary;
 		border: 1px solid $color-primary;
 		color: $color-white;
-
 		&:hover {
 			background: darken($color-primary, 10%);
 			border: 1px solid darken($color-primary, 10%);
 		}
 	}
-
-	&.ghost {
+	&.secondary {
+		background: $color-secondary;
+		border: 1px solid $color-secondary;
+		color: $color-white;
+		&:hover {
+			background: darken($color-secondary, 10%);
+			border: 1px solid darken($color-secondary, 10%);
+		}
+	}
+	&.ghost-primary {
 		border: 1px solid $color-primary;
 		color: $color-primary;
-
 		&:hover {
 			background: $color-primary;
+			color: $color-white;
+		}
+	}
+	&.ghost-secondary {
+		border: 1px solid $color-secondary;
+		color: $color-secondary;
+		&:hover {
+			background: $color-secondary;
 			color: $color-white;
 		}
 	}
