@@ -40,20 +40,40 @@
   @if $class == xs {
     @media (max-width: $breakpoint-extra-small) { @content; }
   }
- 
   @else if $class == sm {
     @media (max-width: $breakpoint-small) { @content; }
   }
- 
   @else if $class == md {
     @media (max-width: $breakpoint-medium) { @content; }
   }
- 
   @else if $class == lg {
     @media (max-width: $breakpoint-large) { @content; }
   }
- 
+  @else if $class == xl {
+    @media (max-width: $breakpoint-extra-large) { @content; }
+  }
   @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+  }
+}
+
+@mixin breakpoint-mobile-first($class) {
+  @if $class == xs {
+    @media (min-width: $breakpoint-extra-small) { @content; }
+  }
+  @else if $class == sm {
+    @media (min-width: $breakpoint-small) { @content; }
+  }
+  @else if $class == md {
+    @media (min-width: $breakpoint-medium) { @content; }
+  }
+  @else if $class == lg {
+    @media (min-width: $breakpoint-large) { @content; }
+  }
+  @else if $class == xl {
+    @media (min-width: $breakpoint-extra-large) { @content; }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
   }
 }
