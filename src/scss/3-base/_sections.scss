@@ -5,21 +5,21 @@
 .full-width {
 	width: 100%;
 	&.pad-full {
-		padding: $padding-section 0;
-		@include breakpoint(sm) {
-			padding: 50px 0;
+		padding: ($padding-section / 2) 0;
+		@include breakpoint-mobile-first(sm) {
+			padding: $padding-section 0;
 		}
 	}
 	&.pad-top {
-		padding: $padding-section 0 0;
-		@include breakpoint(sm) {
-			padding: 50px 0 0;
+		padding: ($padding-section / 2) 0 0;
+		@include breakpoint-mobile-first(sm) {
+			padding: $padding-section 0 0;
 		}
 	}
 	&.pad-bottom {
-		padding: 0 0 $padding-section;
-		@include breakpoint(sm) {
-			padding: 0 0 50px;
+		padding: 0 0 ($padding-section / 2);
+		@include breakpoint-mobile-first(sm) {
+			padding: 0 0 $padding-section;
 		}
 	}
 	&.pad-half {
