@@ -48,7 +48,6 @@ em {
 a {
 	color: $color-primary;
 	@include transition(0.2s);
-
 	&:hover {
 		color: darken($color-primary, 15%);
 	}

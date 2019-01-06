@@ -28,13 +28,19 @@
 }
 @include breakpoint(md) {
 	.col-3,
-	.col-4 {
+	.col-4,
+	.col-6,
+	.col-8,
+	.col-12 {
 		max-width: ($wrapper-base - ($grid-cols-gutter-small * 2)) / 2 / $wrapper-base * 100%;
 	}
 }
 @include breakpoint(xs) {
 	.col-3,
-	.col-4 {
+	.col-4,
+	.col-6,
+	.col-8,
+	.col-12 {
 		max-width: 100%;
 	}
 }

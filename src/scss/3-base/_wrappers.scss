@@ -9,8 +9,7 @@
 	max-width: $wrapper-base;
 	@include breakpoint(lg) {
 		padding: 0 20px;
-	}
-	
+	}	
 	&.small {
 		max-width: $wrapper-small;
 	}
