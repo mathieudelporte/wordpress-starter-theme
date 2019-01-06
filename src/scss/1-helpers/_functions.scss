@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------
+// FUNCTIONS
+// ------------------------------------------------------------------
+
+// Calculate PX to EM
+@function px-to-em($target, $context: $font-size) {
+	@return($target / $context) * 1em;
+}
+
+// Calculate PX to PERCENTAGE
+@function px-to-pc($target, $context: $wrapper-large) {
+	@return($target / $context) * 100%;
+}
