@@ -44,7 +44,7 @@ add_action( 'wp_dashboard_setup', 'dashboard_cleanup' );
 // ---------------------------------------------------------------------------------------------
 
 function custom_admin_footer () {
-    echo 'Website by <a href="https://mathieudelporte.be" target="_blank">Mathieu Delporte</a>';
+    echo 'Website by <a href="https://mathieudelporte.be" target="_blank">Mathieu Delporte</a> | Powered by <a href="http://www.wordpress.org" target="_blank">WordPress</a>';
 }
 add_filter('admin_footer_text', 'custom_admin_footer');
 
@@ -58,7 +58,7 @@ function remove_menus() {
     // remove_menu_page('edit.php?post_type=page'); // Pages
     // remove_menu_page('upload.php'); // Media
     // remove_menu_page('link-manager.php'); // Links
-    // remove_menu_page('edit-comments.php'); // Comments
+    remove_menu_page('edit-comments.php'); // Comments
     // remove_menu_page('themes.php'); // Appearance
     // remove_menu_page('plugins.php'); // Plugins
     // remove_menu_page('users.php'); // Users
