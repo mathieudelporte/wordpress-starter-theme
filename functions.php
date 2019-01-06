@@ -61,7 +61,7 @@ add_theme_support('post-thumbnails');
 
 register_nav_menus(
     array(
-        'main-nav' => __('Main Menu', 'Hans Calsyn')
+        'main-nav' => __('Main Menu', 'theme_name')
     )
 );
 
