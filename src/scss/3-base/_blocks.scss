@@ -4,8 +4,6 @@
 
 .block-left {
 	margin-bottom: 2em;
-	height: 100px;
-	background: #eaeaea;
 	@include breakpoint-mobile-first(sm) {
 		float: left;
 		padding-right: px-to-pc(25px);
@@ -13,8 +11,6 @@
 	}
 }
 .block-right {
-	height: 100px;
-	background: #d5d5d5;
 	@include breakpoint-mobile-first(sm) {
 		float: right;
 		padding-left: px-to-pc(25px);
