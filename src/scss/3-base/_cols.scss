@@ -6,8 +6,6 @@
 	width: 100%;
 	max-width: 100%;
 	margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
-	height: 50px;
-	background: #eaeaea;
 	margin-bottom: 1em;
 	@include breakpoint-mobile-first(sm) {
 		float: left;

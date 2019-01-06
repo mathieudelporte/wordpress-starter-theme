@@ -140,22 +140,17 @@ img {
     padding: 60px 0; }
 
 .block-left {
-  margin-bottom: 2em;
-  height: 100px;
-  background: #eaeaea; }
+  margin-bottom: 2em; }
   @media (min-width: 576px) {
     .block-left {
       float: left;
       padding-right: 2.0833333333%;
       margin-bottom: 0; } }
 
-.block-right {
-  height: 100px;
-  background: #d5d5d5; }
-  @media (min-width: 576px) {
-    .block-right {
-      float: right;
-      padding-left: 2.0833333333%; } }
+@media (min-width: 576px) {
+  .block-right {
+    float: right;
+    padding-left: 2.0833333333%; } }
 
 @media (min-width: 576px) {
   .block-left.left-10 {
@@ -203,8 +198,6 @@ img {
   width: 100%;
   max-width: 100%;
   margin: 1%;
-  height: 50px;
-  background: #eaeaea;
   margin-bottom: 1em; }
   @media (min-width: 576px) {
     .col {
