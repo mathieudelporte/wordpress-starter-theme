@@ -3,12 +3,16 @@
 // ------------------------------------------------------------------
 
 .col {
-	float: left;
 	width: 100%;
 	max-width: 100%;
 	margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 	height: 50px;
 	background: #eaeaea;
+	margin-bottom: 1em;
+	@include breakpoint-mobile-first(sm) {
+		float: left;
+		margin-bottom: none;
+	}
 }
 @include breakpoint-mobile-first(sm) {
 	@for $i from 1 through $grid-cols-count {
@@ -38,46 +42,3 @@
 		}
 	}
 }
-
-// // Placeholder for the col classes
-// %col {
-// 	float: left;
-// 	width: 100%;
-// 	margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
-// 	@include breakpoint(md) {
-// 		margin: (($grid-cols-gutter-small / 2) / $wrapper-base) * 100%;
-// 	}
-// 	@include breakpoint(xs) {
-// 		float: none;
-// 		margin: 0 0 2em;
-// 	}
-// }
-
-// // Function to generate the col classes based on the variables
-// @for $i from 1 through $grid-cols-count {
-// 	.col-#{$i} {
-// 		@extend %col;
-// 		max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
-// 		@include breakpoint(sm) {
-// 			max-width: 100%;
-// 		}
-// 	}
-// }
-// @include breakpoint(md) {
-// 	.col-3,
-// 	.col-4,
-// 	.col-6,
-// 	.col-8,
-// 	.col-12 {
-// 		max-width: ($wrapper-base - ($grid-cols-gutter-small * 2)) / 2 / $wrapper-base * 100%;
-// 	}
-// }
-// @include breakpoint(xs) {
-// 	.col-3,
-// 	.col-4,
-// 	.col-6,
-// 	.col-8,
-// 	.col-12 {
-// 		max-width: 100%;
-// 	}
-// }
