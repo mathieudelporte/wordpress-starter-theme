@@ -11,3 +11,9 @@
 @function px-to-pc($target, $context: $wrapper-large) {
 	@return($target / $context) * 100%;
 }
+
+// REM font-size
+@function rem($size) {
+  $rem: $size / $font-size;
+  @return $rem * 1rem;
+}
