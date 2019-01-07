@@ -7,8 +7,9 @@
 	width: 100%;
 	margin: 0 auto;
 	max-width: $wrapper-base;
-	@include breakpoint(lg) {
-		padding: 0 20px;
+	padding: 0 20px;
+	@include breakpoint-mobile-first(xl) {
+		padding: 0;
 	}	
 	&.small {
 		max-width: $wrapper-small;
@@ -26,7 +27,7 @@
 		max-width: $wrapper-small + $grid-cols-gutter;
 	}
 	&.cols-medium {
-		max-width: $wrapper-medium + ($grid-cols-gutter - 5px);
+		max-width: $wrapper-medium + $grid-cols-gutter;
 	}
 	&.cols-large {
 		max-width: $wrapper-large + $grid-cols-gutter;
