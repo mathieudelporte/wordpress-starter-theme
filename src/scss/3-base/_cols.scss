@@ -1,42 +1,46 @@
 // ------------------------------------------------------------------
 // COLS
+// Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
 // ------------------------------------------------------------------
 
 .col {
 	width: 100%;
 	max-width: 100%;
-	margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 	margin-bottom: 1em;
+	height: 50px;
+	background: #eaeaea;
 	@include breakpoint-mobile-first(sm) {
 		float: left;
+		margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 		margin-bottom: none;
 	}
 }
 @include breakpoint-mobile-first(sm) {
 	@for $i from 1 through $grid-cols-count {
 		.col.sm-#{$i} {
-			max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
+			margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
 @include breakpoint-mobile-first(md) {
 	@for $i from 1 through $grid-cols-count {
 		.col.md-#{$i} {
-			max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
 @include breakpoint-mobile-first(lg) {
 	@for $i from 1 through $grid-cols-count {
 		.col.lg-#{$i} {
-			max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
 @include breakpoint-mobile-first(xl) {
 	@for $i from 1 through $grid-cols-count {
 		.col.xl-#{$i} {
-			max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
