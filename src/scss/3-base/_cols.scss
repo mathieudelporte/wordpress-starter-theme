@@ -1,20 +1,30 @@
 // ------------------------------------------------------------------
 // COLS
-// Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
 // ------------------------------------------------------------------
 
-.col {
+%col-base {
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: 1em;
-	height: 50px;
-	background: #eaeaea;
+}
+.col {
+	@extend %col-base;
 	@include breakpoint-mobile-first(sm) {
 		float: left;
 		margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 		margin-bottom: none;
 	}
 }
+.full-col {
+	@extend %col-base;
+	@include breakpoint-mobile-first(sm) {
+		float: left;
+		margin-bottom: none;
+	}
+}
+// Col classes
+// Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
+// ------------------------------------------------------------------
 @include breakpoint-mobile-first(sm) {
 	@for $i from 1 through $grid-cols-count {
 		.col.sm-#{$i} {
@@ -40,6 +50,38 @@
 @include breakpoint-mobile-first(xl) {
 	@for $i from 1 through $grid-cols-count {
 		.col.xl-#{$i} {
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
+		}
+	}
+}
+// Full col classes
+// Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
+// ------------------------------------------------------------------
+@include breakpoint-mobile-first(sm) {
+	@for $i from 1 through $grid-cols-count {
+		.full-col.sm-#{$i} {
+			margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
+		}
+	}
+}
+@include breakpoint-mobile-first(md) {
+	@for $i from 1 through $grid-cols-count {
+		.full-col.md-#{$i} {
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
+		}
+	}
+}
+@include breakpoint-mobile-first(lg) {
+	@for $i from 1 through $grid-cols-count {
+		.full-col.lg-#{$i} {
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
+		}
+	}
+}
+@include breakpoint-mobile-first(xl) {
+	@for $i from 1 through $grid-cols-count {
+		.full-col.xl-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
