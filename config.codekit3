@@ -23,6 +23,13 @@
 		"oAP": "/footer.php",
 		"oF": 0
 		},
+	"/functions-admin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/functions-admin.php",
+		"oF": 0
+		},
 	"/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -352,7 +359,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 566574430.28900599,
-	"displayValue": "Starter theme-2019",
+	"displayValue": "wordpress-starter-theme",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-krieger",
 	"iconImageWasSetByUser": 0
