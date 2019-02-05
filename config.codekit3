@@ -134,6 +134,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/scss/1-helpers/_normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/scss/1-helpers/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/scss/1-helpers/_reset.scss": {
 		"aP": 0,
 		"bl": 0,
