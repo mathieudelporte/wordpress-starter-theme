@@ -8,7 +8,7 @@
 	margin: 0 auto;
 	max-width: $wrapper-base;
 	padding: 0 20px;
-	@include breakpoint-mobile-first(xl) {
+	@include breakpoint-min(xl) {
 		padding: 0;
 	}	
 	&.small {

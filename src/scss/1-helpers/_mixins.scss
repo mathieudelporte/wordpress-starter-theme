@@ -45,7 +45,7 @@
 // BREAKPOINTS
 // ------------------------------------------------------------------
 
-@mixin breakpoint($class) {
+@mixin breakpoint-max($class) {
   @if $class == xs {
     @media (max-width: $breakpoint-extra-small) { @content; }
   }
@@ -66,7 +66,7 @@
   }
 }
 
-@mixin breakpoint-mobile-first($class) {
+@mixin breakpoint-min($class) {
   @if $class == xs {
     @media (min-width: $breakpoint-extra-small) { @content; }
   }

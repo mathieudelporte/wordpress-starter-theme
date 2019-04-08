@@ -9,7 +9,7 @@
 }
 .col {
 	@extend %col-base;
-	@include breakpoint-mobile-first(sm) {
+	@include breakpoint-min(sm) {
 		float: left;
 		margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 		margin-bottom: none;
@@ -17,7 +17,7 @@
 }
 .full-col {
 	@extend %col-base;
-	@include breakpoint-mobile-first(sm) {
+	@include breakpoint-min(sm) {
 		float: left;
 		margin-bottom: none;
 	}
@@ -25,7 +25,7 @@
 // Col classes
 // Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
 // ------------------------------------------------------------------
-@include breakpoint-mobile-first(sm) {
+@include breakpoint-min(sm) {
 	@for $i from 1 through $grid-cols-count {
 		.col.sm-#{$i} {
 			margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
@@ -33,21 +33,21 @@
 		}
 	}
 }
-@include breakpoint-mobile-first(md) {
+@include breakpoint-min(md) {
 	@for $i from 1 through $grid-cols-count {
 		.col.md-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
-@include breakpoint-mobile-first(lg) {
+@include breakpoint-min(lg) {
 	@for $i from 1 through $grid-cols-count {
 		.col.lg-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
-@include breakpoint-mobile-first(xl) {
+@include breakpoint-min(xl) {
 	@for $i from 1 through $grid-cols-count {
 		.col.xl-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
@@ -57,7 +57,7 @@
 // Full col classes
 // Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
 // ------------------------------------------------------------------
-@include breakpoint-mobile-first(sm) {
+@include breakpoint-min(sm) {
 	@for $i from 1 through $grid-cols-count {
 		.full-col.sm-#{$i} {
 			margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
@@ -65,21 +65,21 @@
 		}
 	}
 }
-@include breakpoint-mobile-first(md) {
+@include breakpoint-min(md) {
 	@for $i from 1 through $grid-cols-count {
 		.full-col.md-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
-@include breakpoint-mobile-first(lg) {
+@include breakpoint-min(lg) {
 	@for $i from 1 through $grid-cols-count {
 		.full-col.lg-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
 }
-@include breakpoint-mobile-first(xl) {
+@include breakpoint-min(xl) {
 	@for $i from 1 through $grid-cols-count {
 		.full-col.xl-#{$i} {
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);

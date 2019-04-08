@@ -4,19 +4,19 @@
 
 .block-left {
 	margin-bottom: 2em;
-	@include breakpoint-mobile-first(sm) {
+	@include breakpoint-min(sm) {
 		float: left;
 		padding-right: px-to-pc(25px);
 		margin-bottom: 0;
 	}
 }
 .block-right {
-	@include breakpoint-mobile-first(sm) {
+	@include breakpoint-min(sm) {
 		float: right;
 		padding-left: px-to-pc(25px);
 	}
 }
-@include breakpoint-mobile-first(sm) {
+@include breakpoint-min(sm) {
 	@for $i from 1 through 10 {
 		.block-left.left-#{$i * 10} {
 			width: $i * 10%;
