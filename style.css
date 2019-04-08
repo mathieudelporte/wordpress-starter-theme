@@ -359,29 +359,6 @@ table {
 html {
   height: 100%; }
 
-body {
-  font-family: "Arial", sans-serif;
-  font-size: 16px; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-.align-center {
-  text-align: center; }
-
-.align-left {
-  text-align: left; }
-
-.align-right {
-  text-align: right; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
 .cf:before,
 .cf:after {
   content: " ";
@@ -393,13 +370,30 @@ img {
 .clear {
   clear: both; }
 
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
 .flex {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  align-items: center; }
+  display: flex; }
+  .flex.center {
+    align-items: center; }
+  .flex.stretch {
+    align-items: stretch; }
 
 .wrapper, .wrapper-cols {
   position: relative;
@@ -844,6 +838,18 @@ a {
   transition: all 0.2s ease-in-out; }
   a:hover {
     color: #050607; }
+
+.align-center {
+  text-align: center; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-justify {
+  text-align: justify; }
 
 a.button {
   position: relative;

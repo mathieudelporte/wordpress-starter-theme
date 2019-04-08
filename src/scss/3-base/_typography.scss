@@ -26,7 +26,7 @@ h6 {
 }
 
 // ------------------------------------------------------------------
-// PARAGRAPHS
+// PARAGRAPHS & LINKS
 // ------------------------------------------------------------------
 
 p {
@@ -40,15 +40,27 @@ strong {
 em {
 	font-style: italic;
 }
-
-// ------------------------------------------------------------------
-// LINKS
-// ------------------------------------------------------------------
-
 a {
 	color: $color-primary;
 	@include transition(0.2s);
 	&:hover {
 		color: darken($color-primary, 15%);
 	}
+}
+
+// ------------------------------------------------------------------
+// ALIGNING TEXT
+// ------------------------------------------------------------------
+
+.align-center {
+	text-align: center;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-justify {
+	text-align: justify;
 }
