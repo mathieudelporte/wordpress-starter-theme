@@ -1,65 +1,139 @@
 // ------------------------------------------------------------------
-// WRAPPERS
+// BASE WRAPPERS
 // ------------------------------------------------------------------
 
 %wrapper-base {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	padding: 20px;
-	background: #d5d5d5;
+	// background: #d5d5d5;
+	// min-height: 25px;
+	// margin-bottom: 3em;
 }
 .wrapper {
 	@extend %wrapper-base;
-	max-width: $wrapper-base;
-	@include breakpoint-min(xl) {
-		padding: 20px 0;
-	}	
-	&.small {
-		max-width: $wrapper-sm;
-	}
-	&.medium {
-		max-width: $wrapper-md;
-	}
-	&.large {
-		max-width: $wrapper-lg;
-	}
-	&.cols {
-		max-width: $wrapper-base + $grid-cols-gutter;
-	}
-	&.cols-small {
-		max-width: $wrapper-sm + $grid-cols-gutter;
-	}
-	&.cols-medium {
-		max-width: $wrapper-md + $grid-cols-gutter;
-	}
-	&.cols-large {
-		max-width: $wrapper-lg + $grid-cols-gutter;
+	@include breakpoint-max(xs) {
+		padding: 0 20px;
 	}
 }
 
+// Max-widths for XS and up
 @include breakpoint-min(xs) {
 	.wrapper {
 		max-width: $breakpoint-xs;
+
+		&.xs {
+			max-width: $breakpoint-xs;
+		}
 	}
 }
+
+// Max-widths for SM and up
 @include breakpoint-min(sm) {
 	.wrapper {
 		max-width: $breakpoint-sm;
+
+		&.sm {
+			max-width: $breakpoint-sm;
+		}
 	}
 }
+
+// Max-widths for MD and up
 @include breakpoint-min(md) {
 	.wrapper {
 		max-width: $breakpoint-md;
+
+		&.md {
+			max-width: $breakpoint-md;
+		}
 	}
 }
+
+// Max-widths for LG and up
 @include breakpoint-min(lg) {
 	.wrapper {
 		max-width: $breakpoint-lg;
+
+		&.lg {
+			max-width: $breakpoint-lg;
+		}
 	}
 }
+
+// Max-widths for XL and up
 @include breakpoint-min(xl) {
 	.wrapper {
 		max-width: $breakpoint-xl;
+
+		&.xl {
+			max-width: $breakpoint-xl;
+		}
+	}
+}
+
+// ------------------------------------------------------------------
+// COLUMN WRAPPERS
+// ------------------------------------------------------------------
+
+.wrapper-cols {
+	@extend %wrapper-base;
+	@include breakpoint-max(xs) {
+		padding: 0 20px;
+	}
+}
+
+// Max-widths for XS and up
+@include breakpoint-min(xs) {
+	.wrapper-cols {
+		max-width: $breakpoint-xs + $grid-cols-gutter;
+
+		&.xs {
+			max-width: $breakpoint-xs + $grid-cols-gutter;
+		}
+	}
+}
+
+// Max-widths for SM and up
+@include breakpoint-min(sm) {
+	.wrapper-cols {
+		max-width: $breakpoint-sm + $grid-cols-gutter;
+
+		&.sm {
+			max-width: $breakpoint-sm + $grid-cols-gutter;
+		}
+	}
+}
+
+// Max-widths for MD and up
+@include breakpoint-min(md) {
+	.wrapper-cols {
+		max-width: $breakpoint-md + $grid-cols-gutter;
+
+		&.md {
+			max-width: $breakpoint-md + $grid-cols-gutter;
+		}
+	}
+}
+
+// Max-widths for LG and up
+@include breakpoint-min(lg) {
+	.wrapper-cols {
+		max-width: $breakpoint-lg + $grid-cols-gutter;
+
+		&.lg {
+			max-width: $breakpoint-lg + $grid-cols-gutter;
+		}
+	}
+}
+
+// Max-widths for XL and up
+@include breakpoint-min(xl) {
+	.wrapper-cols {
+		max-width: $breakpoint-xl + $grid-cols-gutter;
+
+		&.xl {
+			max-width: $breakpoint-xl + $grid-cols-gutter;
+		}
 	}
 }

@@ -401,52 +401,78 @@ img {
   display: flex;
   align-items: center; }
 
-.wrapper {
+.wrapper, .wrapper-cols {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-  background: #d5d5d5; }
+  margin: 0 auto; }
 
-.wrapper {
-  max-width: 1200px; }
-  @media (min-width: 1200px) {
-    .wrapper {
-      padding: 20px 0; } }
-  .wrapper.small {
-    max-width: 600px; }
-  .wrapper.medium {
-    max-width: 900px; }
-  .wrapper.large {
-    max-width: 1200px; }
-  .wrapper.cols {
-    max-width: 1230px; }
-  .wrapper.cols-small {
-    max-width: 630px; }
-  .wrapper.cols-medium {
-    max-width: 930px; }
-  .wrapper.cols-large {
-    max-width: 1230px; }
+@media (max-width: 450px) {
+  .wrapper {
+    padding: 0 20px; } }
 
 @media (min-width: 450px) {
   .wrapper {
-    max-width: 450px; } }
+    max-width: 450px; }
+    .wrapper.xs {
+      max-width: 450px; } }
 
 @media (min-width: 576px) {
   .wrapper {
-    max-width: 576px; } }
+    max-width: 576px; }
+    .wrapper.sm {
+      max-width: 576px; } }
 
 @media (min-width: 768px) {
   .wrapper {
-    max-width: 768px; } }
+    max-width: 768px; }
+    .wrapper.md {
+      max-width: 768px; } }
 
 @media (min-width: 992px) {
   .wrapper {
-    max-width: 992px; } }
+    max-width: 992px; }
+    .wrapper.lg {
+      max-width: 992px; } }
 
 @media (min-width: 1200px) {
   .wrapper {
-    max-width: 1200px; } }
+    max-width: 1200px; }
+    .wrapper.xl {
+      max-width: 1200px; } }
+
+@media (max-width: 450px) {
+  .wrapper-cols {
+    padding: 0 20px; } }
+
+@media (min-width: 450px) {
+  .wrapper-cols {
+    max-width: 480px; }
+    .wrapper-cols.xs {
+      max-width: 480px; } }
+
+@media (min-width: 576px) {
+  .wrapper-cols {
+    max-width: 606px; }
+    .wrapper-cols.sm {
+      max-width: 606px; } }
+
+@media (min-width: 768px) {
+  .wrapper-cols {
+    max-width: 798px; }
+    .wrapper-cols.md {
+      max-width: 798px; } }
+
+@media (min-width: 992px) {
+  .wrapper-cols {
+    max-width: 1022px; }
+    .wrapper-cols.lg {
+      max-width: 1022px; } }
+
+@media (min-width: 1200px) {
+  .wrapper-cols {
+    max-width: 1230px; }
+    .wrapper-cols.xl {
+      max-width: 1230px; } }
 
 .full-width {
   width: 100%; }
@@ -526,15 +552,17 @@ img {
 .col, .full-col {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1em;
   background: #a5a5a5;
   height: 25px; }
 
 @media (min-width: 576px) {
   .col {
     float: left;
-    margin: 1.25%;
-    margin-bottom: none; } }
+    margin: 1.25%; } }
+
+@media (max-width: 576px) {
+  .col {
+    margin-bottom: 1em; } }
 
 @media (min-width: 576px) {
   .full-col {

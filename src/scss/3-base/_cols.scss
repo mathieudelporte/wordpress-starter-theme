@@ -5,7 +5,6 @@
 %col-base {
 	width: 100%;
 	max-width: 100%;
-	margin-bottom: 1em;
 	background: #a5a5a5;
 	height: 25px;
 }
@@ -14,7 +13,9 @@
 	@include breakpoint-min(sm) {
 		float: left;
 		margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
-		margin-bottom: none;
+	}
+	@include breakpoint-max(sm) {
+		margin-bottom: 1em;
 	}
 }
 .full-col {
