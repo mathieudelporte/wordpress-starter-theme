@@ -6,6 +6,8 @@
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: 1em;
+	background: #a5a5a5;
+	height: 25px;
 }
 .col {
 	@extend %col-base;

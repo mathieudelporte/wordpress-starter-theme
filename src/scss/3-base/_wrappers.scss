@@ -2,34 +2,64 @@
 // WRAPPERS
 // ------------------------------------------------------------------
 
-.wrapper {
+%wrapper-base {
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
+	padding: 20px;
+	background: #d5d5d5;
+}
+.wrapper {
+	@extend %wrapper-base;
 	max-width: $wrapper-base;
-	padding: 0 20px;
 	@include breakpoint-min(xl) {
-		padding: 0;
+		padding: 20px 0;
 	}	
 	&.small {
-		max-width: $wrapper-small;
+		max-width: $wrapper-sm;
 	}
 	&.medium {
-		max-width: $wrapper-medium;
+		max-width: $wrapper-md;
 	}
 	&.large {
-		max-width: $wrapper-large;
+		max-width: $wrapper-lg;
 	}
 	&.cols {
 		max-width: $wrapper-base + $grid-cols-gutter;
 	}
 	&.cols-small {
-		max-width: $wrapper-small + $grid-cols-gutter;
+		max-width: $wrapper-sm + $grid-cols-gutter;
 	}
 	&.cols-medium {
-		max-width: $wrapper-medium + $grid-cols-gutter;
+		max-width: $wrapper-md + $grid-cols-gutter;
 	}
 	&.cols-large {
-		max-width: $wrapper-large + $grid-cols-gutter;
+		max-width: $wrapper-lg + $grid-cols-gutter;
+	}
+}
+
+@include breakpoint-min(xs) {
+	.wrapper {
+		max-width: $breakpoint-xs;
+	}
+}
+@include breakpoint-min(sm) {
+	.wrapper {
+		max-width: $breakpoint-sm;
+	}
+}
+@include breakpoint-min(md) {
+	.wrapper {
+		max-width: $breakpoint-md;
+	}
+}
+@include breakpoint-min(lg) {
+	.wrapper {
+		max-width: $breakpoint-lg;
+	}
+}
+@include breakpoint-min(xl) {
+	.wrapper {
+		max-width: $breakpoint-xl;
 	}
 }
