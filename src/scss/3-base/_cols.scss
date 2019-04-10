@@ -4,23 +4,21 @@
 
 %col-base {
 	width: 100%;
-	max-width: 100%;
 	background: #a5a5a5;
 	height: 25px;
+	margin-bottom: 1em;
 }
 .col {
 	@extend %col-base;
-	@include breakpoint-min(sm) {
-		float: left;
-		margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
-	}
-	@include breakpoint-max(sm) {
-		margin-bottom: 1em;
+	@include breakpoint-min(xs) {
+		// float: left;
+		// margin-bottom: none;
+		// margin: ((($grid-cols-gutter / 2) / $wrapper-base) * 100%);
 	}
 }
 .full-col {
 	@extend %col-base;
-	@include breakpoint-min(sm) {
+	@include breakpoint-min(xs) {
 		float: left;
 		margin-bottom: none;
 	}
@@ -28,10 +26,16 @@
 // Col classes
 // Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
 // ------------------------------------------------------------------
+@include breakpoint-min(xs) {
+	@for $i from 1 through $grid-cols-count {
+		.col.xs-#{$i} {
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
+		}
+	}
+}
 @include breakpoint-min(sm) {
 	@for $i from 1 through $grid-cols-count {
 		.col.sm-#{$i} {
-			margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}
@@ -60,10 +64,16 @@
 // Full col classes
 // Old formula: max-width: ($wrapper-base - ($grid-cols-gutter * $i)) / $i / $wrapper-base * 100%;
 // ------------------------------------------------------------------
+@include breakpoint-min(xs) {
+	@for $i from 1 through $grid-cols-count {
+		.full-col.xs-#{$i} {
+			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
+		}
+	}
+}
 @include breakpoint-min(sm) {
 	@for $i from 1 through $grid-cols-count {
 		.full-col.sm-#{$i} {
-			margin: (($grid-cols-gutter / 2) / $wrapper-base) * 100%;
 			max-width: 100% / $grid-cols-count * $i - px-to-pc($grid-cols-gutter);
 		}
 	}

@@ -6,13 +6,13 @@
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	// background: #d5d5d5;
-	// min-height: 25px;
-	// margin-bottom: 3em;
+	background: #d5d5d5;
+	min-height: 25px;
+	margin-bottom: 1em;
 }
 .wrapper {
 	@extend %wrapper-base;
-	@include breakpoint-max(xs) {
+	@include breakpoint-max(sm) {
 		padding: 0 20px;
 	}
 }
@@ -78,7 +78,7 @@
 
 .wrapper-cols {
 	@extend %wrapper-base;
-	@include breakpoint-max(xs) {
+	@include breakpoint-max(sm) {
 		padding: 0 20px;
 	}
 }
