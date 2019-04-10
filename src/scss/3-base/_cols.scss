@@ -4,16 +4,16 @@
 
 %col-base {
 	width: 100%;
-	background: #a5a5a5;
+	// background: #a5a5a5;
 	height: 25px;
 	margin-bottom: 1em;
 }
 .col {
 	@extend %col-base;
 	@include breakpoint-min(xs) {
-		// float: left;
-		// margin-bottom: none;
-		// margin: ((($grid-cols-gutter / 2) / $wrapper-base) * 100%);
+		float: left;
+		margin-bottom: none;
+		margin: ((($grid-cols-gutter / 2) / $wrapper-base) * 100%);
 	}
 }
 .full-col {

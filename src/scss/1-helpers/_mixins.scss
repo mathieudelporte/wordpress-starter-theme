@@ -86,3 +86,18 @@
     @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
   }
 }
+
+// ------------------------------------------------------------------
+// CLEARFIX
+// ------------------------------------------------------------------
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    display: table; // 2
+    content: " "; // 1
+  }
+  &:after {
+    clear: both;
+  }
+}

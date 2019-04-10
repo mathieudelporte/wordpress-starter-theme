@@ -2,13 +2,8 @@
 // CLEARFIX
 // ------------------------------------------------------------------
 
-.cf:before,
-.cf:after {
-	content: " ";
-	display: table;
-}
-.cf:after {
-	clear: both;
+.cf {
+	@include clearfix;
 }
 .clear {
 	clear: both;
@@ -21,6 +16,7 @@
 body {
 	font-family: $font-family;
 	font-size: $font-size;
+	background: #eaeaea;
 }
 img {
 	max-width: 100%;
