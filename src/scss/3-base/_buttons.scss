@@ -2,7 +2,7 @@
 // BUTTONS
 // ------------------------------------------------------------------
 
-a.button {
+%btn-base {
 	position: relative;
 	display: inline-block;
 	margin: 1em auto 0;
@@ -10,38 +10,48 @@ a.button {
 	font-size: 0.8em;
 	font-weight: 700;
 	text-decoration: none;
-	&.primary {
-		background: $color-primary;
-		border: 1px solid $color-primary;
-		color: $color-white;
-		&:hover {
-			background: darken($color-primary, 10%);
-			border: 1px solid darken($color-primary, 10%);
-		}
-	}
-	&.secondary {
-		background: $color-secondary;
-		border: 1px solid $color-secondary;
-		color: $color-white;
-		&:hover {
-			background: darken($color-secondary, 10%);
-			border: 1px solid darken($color-secondary, 10%);
-		}
-	}
-	&.ghost-primary {
-		border: 1px solid $color-primary;
-		color: $color-primary;
-		&:hover {
-			background: $color-primary;
-			color: $color-white;
-		}
-	}
-	&.ghost-secondary {
-		border: 1px solid $color-secondary;
-		color: $color-secondary;
-		&:hover {
-			background: $color-secondary;
-			color: $color-white;
-		}
-	}
 }
+
+.btn {
+    @extend %btn-base;
+}
+
+// Mixin to generate the button classes
+@mixin button($class-name, $background-color, $text-color) {
+    .#{$class-name} {
+        background: $background-color;
+        color: $text-color;
+        &:hover {
+            background-color: darken($background-color, 5%);
+        }
+        &:focus {
+            background-color: darken($background-color, 10%);
+        }
+    }
+}
+
+// Mixin to generate the ghost button classes
+@mixin button-ghost($class-name, $color, $hover-color: $color-white) {
+    .#{$class-name} {
+        border: 2px solid $color;
+        color: $color;
+        &:hover {
+            border: 2px solid darken($color, 5%);
+            background: darken($color, 5%);
+            color: $hover-color;
+        }
+        &:focus {
+            border: 2px solid darken($color, 10%);
+            background: darken($color, 10%);
+            color: $hover-color;
+        }
+    }
+}
+
+// Generate the button classes
+@include button('btn--primary', $color-primary, $color-white);
+@include button('btn--secondary', $color-secondary, $color-white);
+
+// Generate the ghost button classes
+@include button-ghost('btn--ghost-primary', $color-primary);
+@include button-ghost('btn--ghost-secondary', $color-secondary);

@@ -3,8 +3,8 @@
 // ------------------------------------------------------------------
 
 @mixin font-size($size) {
-  font-size: $size;
-  font-size: rem($size);
+	font-size: $size;
+	font-size: rem($size);
 }
 
 // ------------------------------------------------------------------
@@ -14,8 +14,8 @@
 @mixin transition($property) {
 	-webkit-transition: all $property ease-in-out;
 	-moz-transition: all $property ease-in-out;
-  -ms-transition: all $property ease-in-out;
-  -o-transition: all $property ease-in-out;
+	-ms-transition: all $property ease-in-out;
+	-o-transition: all $property ease-in-out;
 	transition: all $property ease-in-out;
 }
 
@@ -24,9 +24,9 @@
 // ------------------------------------------------------------------
 
 @mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie); //IE8
 }
 
 // ------------------------------------------------------------------
@@ -34,11 +34,11 @@
 // ------------------------------------------------------------------
 
 @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 }
 
 // ------------------------------------------------------------------
@@ -46,45 +46,45 @@
 // ------------------------------------------------------------------
 
 @mixin breakpoint-max($class) {
-  @if $class == xs {
-    @media (max-width: $breakpoint-xs) { @content; }
-  }
-  @else if $class == sm {
-    @media (max-width: $breakpoint-sm) { @content; }
-  }
-  @else if $class == md {
-    @media (max-width: $breakpoint-md) { @content; }
-  }
-  @else if $class == lg {
-    @media (max-width: $breakpoint-lg) { @content; }
-  }
-  @else if $class == xl {
-    @media (max-width: $breakpoint-xl) { @content; }
-  }
-  @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
-  }
+	@if $class == xs {
+		@media (max-width: $breakpoint-xs) { @content; }
+	}
+	@else if $class == sm {
+		@media (max-width: $breakpoint-sm) { @content; }
+	}
+	@else if $class == md {
+		@media (max-width: $breakpoint-md) { @content; }
+	}
+	@else if $class == lg {
+		@media (max-width: $breakpoint-lg) { @content; }
+	}
+	@else if $class == xl {
+		@media (max-width: $breakpoint-xl) { @content; }
+	}
+	@else {
+		@warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+	}
 }
 
 @mixin breakpoint-min($class) {
-  @if $class == xs {
-    @media (min-width: $breakpoint-xs) { @content; }
-  }
-  @else if $class == sm {
-    @media (min-width: $breakpoint-sm) { @content; }
-  }
-  @else if $class == md {
-    @media (min-width: $breakpoint-md) { @content; }
-  }
-  @else if $class == lg {
-    @media (min-width: $breakpoint-lg) { @content; }
-  }
-  @else if $class == xl {
-    @media (min-width: $breakpoint-xl) { @content; }
-  }
-  @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
-  }
+	@if $class == xs {
+		@media (min-width: $breakpoint-xs) { @content; }
+	}
+	@else if $class == sm {
+		@media (min-width: $breakpoint-sm) { @content; }
+	}
+	@else if $class == md {
+		@media (min-width: $breakpoint-md) { @content; }
+	}
+	@else if $class == lg {
+		@media (min-width: $breakpoint-lg) { @content; }
+	}
+	@else if $class == xl {
+		@media (min-width: $breakpoint-xl) { @content; }
+	}
+	@else {
+		@warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+	}
 }
 
 // ------------------------------------------------------------------
@@ -92,12 +92,12 @@
 // ------------------------------------------------------------------
 
 @mixin clearfix() {
-  &:before,
-  &:after {
-    display: table; // 2
-    content: " "; // 1
-  }
-  &:after {
-    clear: both;
-  }
+	&:before,
+	&:after {
+		display: table; // 2
+		content: " "; // 1
+	}
+	&:after {
+		clear: both;
+	}
 }

@@ -2892,7 +2892,7 @@ a {
 .align-justify {
   text-align: justify; }
 
-a.button {
+.btn {
   position: relative;
   display: inline-block;
   margin: 1em auto 0;
@@ -2900,32 +2900,46 @@ a.button {
   font-size: 0.8em;
   font-weight: 700;
   text-decoration: none; }
-  a.button.primary {
-    background: #242d35;
-    border: 1px solid #242d35;
+
+.btn--primary {
+  background: #242d35;
+  color: #fff; }
+  .btn--primary:hover {
+    background-color: #1a2026; }
+  .btn--primary:focus {
+    background-color: #0f1317; }
+
+.btn--secondary {
+  background: #f8bd01;
+  color: #fff; }
+  .btn--secondary:hover {
+    background-color: #dfaa01; }
+  .btn--secondary:focus {
+    background-color: #c59601; }
+
+.btn--ghost-primary {
+  border: 2px solid #242d35;
+  color: #242d35; }
+  .btn--ghost-primary:hover {
+    border: 2px solid #1a2026;
+    background: #1a2026;
     color: #fff; }
-    a.button.primary:hover {
-      background: #0f1317;
-      border: 1px solid #0f1317; }
-  a.button.secondary {
-    background: #f8bd01;
-    border: 1px solid #f8bd01;
+  .btn--ghost-primary:focus {
+    border: 2px solid #0f1317;
+    background: #0f1317;
     color: #fff; }
-    a.button.secondary:hover {
-      background: #c59601;
-      border: 1px solid #c59601; }
-  a.button.ghost-primary {
-    border: 1px solid #242d35;
-    color: #242d35; }
-    a.button.ghost-primary:hover {
-      background: #242d35;
-      color: #fff; }
-  a.button.ghost-secondary {
-    border: 1px solid #f8bd01;
-    color: #f8bd01; }
-    a.button.ghost-secondary:hover {
-      background: #f8bd01;
-      color: #fff; }
+
+.btn--ghost-secondary {
+  border: 2px solid #f8bd01;
+  color: #f8bd01; }
+  .btn--ghost-secondary:hover {
+    border: 2px solid #dfaa01;
+    background: #dfaa01;
+    color: #fff; }
+  .btn--ghost-secondary:focus {
+    border: 2px solid #c59601;
+    background: #c59601;
+    color: #fff; }
 
 .container {
   padding-right: 15px;
