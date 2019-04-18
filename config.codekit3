@@ -25,6 +25,27 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/dist/css/main.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/css/main.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dist/js/main.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/dist/js/main.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -73,17 +94,6 @@
 		"oAP": "/index.php",
 		"oF": 0
 		},
-	"/js/scripts.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/js/scripts.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -92,13 +102,13 @@
 		"oAP": "/page.php",
 		"oF": 0
 		},
-	"/src/js/scripts.js": {
+	"/src/js/main.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/scripts.min.js",
+		"oAP": "/dist/js/main.min.js",
 		"oF": 2,
 		"sC": 1,
 		"tS": 0
@@ -384,9 +394,9 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/style.css",
+		"oAP": "/dist/css/main.min.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/style.css": {
@@ -394,9 +404,9 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/style-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 3
 		}
 	},
