@@ -63,3 +63,31 @@
 .pad-half {
 	padding: ($padding-section / 2) 0;
 }
+
+// ------------------------------------------------------------------
+// FLOATING ITEMS
+// ------------------------------------------------------------------
+
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+
+// ------------------------------------------------------------------
+// ALIGNING TEXT
+// ------------------------------------------------------------------
+
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-justify {
+	text-align: justify;
+}

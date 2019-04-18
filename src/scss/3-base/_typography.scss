@@ -2,26 +2,38 @@
 // HEADINGS
 // ------------------------------------------------------------------
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1.2em;
 	margin-bottom: px-to-em($font-size);
 }
-h1 {
+
+h1,
+.h1 {
 	font-size: px-to-em(35px);
 }
-h2 {
+h2,
+.h2 {
 	font-size: px-to-em(25px);
 }
-h3 {
+h3,
+.h3 {
 	font-size: px-to-em(22px);
 }
-h4 {
+h4,
+.h4 {
 	font-size: px-to-em(18px);
 }
-h5 {
+h5,
+.h5 {
 	font-size: px-to-em(16px);
 }
-h6 {
+h6,
+.h6 {
 	font-size: px-to-em(16px);
 }
 
@@ -46,21 +58,4 @@ a {
 	&:hover {
 		color: darken($color-primary, 15%);
 	}
-}
-
-// ------------------------------------------------------------------
-// ALIGNING TEXT
-// ------------------------------------------------------------------
-
-.align-center {
-	text-align: center;
-}
-.align-left {
-	text-align: left;
-}
-.align-right {
-	text-align: right;
-}
-.align-justify {
-	text-align: justify;
 }
