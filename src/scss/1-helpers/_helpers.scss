@@ -42,25 +42,25 @@
 // SECTION PADDINGS
 // ------------------------------------------------------------------
 
-.pad-full {
+.pf {
 	padding: ($padding-section / 2) 0;
 	@include breakpoint-min(sm) {
 		padding: $padding-section 0;
 	}
 }
-.pad-top {
+.pt {
 	padding: ($padding-section / 2) 0 0;
 	@include breakpoint-min(sm) {
 		padding: $padding-section 0 0;
 	}
 }
-.pad-bottom {
+.pb {
 	padding: 0 0 ($padding-section / 2);
 	@include breakpoint-min(sm) {
 		padding: 0 0 $padding-section;
 	}
 }
-.pad-half {
+.ph {
 	padding: ($padding-section / 2) 0;
 }
 
