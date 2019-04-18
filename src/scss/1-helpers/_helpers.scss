@@ -1,41 +1,27 @@
 // ------------------------------------------------------------------
-// MARGIN TOP
+// MARGINS
 // ------------------------------------------------------------------
 
-@for $i from 0 through 200 {
+$i: 10;
+$step: 10;
+$max: 200;
+
+@while $i < $max + $step {
 	.mt-#{$i} {
 		margin-top: #{$i/2}px;
 	}
-	$i: $i + 10;
-}
-
-@include breakpoint-min(md) {
-	@for $i from 0 through 200 {
-		.mt-#{$i} {
-			margin-top: #{$i}px;
-		}
-		$i: $i + 10;
-	}
-}
-
-// ------------------------------------------------------------------
-// MARGIN BOTTOM
-// ------------------------------------------------------------------
-
-@for $i from 0 through 200 {
 	.mb-#{$i} {
 		margin-bottom: #{$i/2}px;
 	}
-	$i: $i + 10;
-}
-
-@include breakpoint-min(md) {
-	@for $i from 0 through 200 {
+	@include breakpoint-min(md) {
+		.mt-#{$i} {
+			margin-top: #{$i}px;
+		}
 		.mb-#{$i} {
 			margin-bottom: #{$i}px;
 		}
-		$i: $i + 10;
 	}
+  	$i: $i + $step;
 }
 
 // ------------------------------------------------------------------
