@@ -2,18 +2,15 @@
 // COLORS
 // ------------------------------------------------------------------
 
-.primary {
-	background: $color-primary;
+// Mixin to generate the background color classes
+@mixin background-color($class-name, $background-color) {
+    .bg--#{$class-name} {
+        background: $background-color;
+    }
 }
-.secondary {
-	background: $color-secondary;
-}
-.white {
-	background: $color-white;
-}
-.grey {
-	background: $color-grey;
-}
-.spot {
-	background: $color-spot;
-}
+
+@include background-color('primary', $color-primary);
+@include background-color('secondary', $color-secondary);
+@include background-color('spot', $color-spot);
+@include background-color('white', $color-white);
+@include background-color('grey', $color-grey);
