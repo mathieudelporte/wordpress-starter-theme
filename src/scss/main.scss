@@ -1,4 +1,15 @@
 @import '1-helpers/1-helpers';
 @import '2-plugins/2-plugins';
-@import '3-base/3-base';
-@import '4-layout/4-layout';
+@import '3-grid/3-grid';
+@import '4-base/4-base';
+@import '5-layout/5-layout';
+
+.container {
+	margin-bottom: 25px;
+}
+
+div[class^="col"] {
+	background: #d5d5d5;
+	padding: 25px;
+	border: 1px solid #a5a5a5;
+}
