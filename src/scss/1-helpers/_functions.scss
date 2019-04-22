@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------
 
 // Calculate PX to EM
-@function px-to-em($target, $context: $font-size) {
+@function px-to-em($target, $context: $font-size-base) {
 	@return($target / $context) * 1em;
 }
 
@@ -14,6 +14,6 @@
 
 // REM font-size
 @function rem($size) {
-	$rem: $size / $font-size;
+	$rem: $size / $font-size-base;
 	@return $rem * 1rem;
 }
