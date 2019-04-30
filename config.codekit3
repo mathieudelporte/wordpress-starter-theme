@@ -360,32 +360,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/4-base/_blocks.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/scss/4-base/_blocks.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/4-base/_bootstrap_3.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/scss/4-base/_bootstrap_3.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/src/scss/4-base/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -412,19 +386,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/src/scss/4-base/_cols.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/scss/4-base/_cols.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/src/scss/4-base/_framework.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -447,19 +408,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/src/scss/4-base/_typography.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/src/scss/4-base/_wrappers.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/src/scss/4-base/_wrappers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

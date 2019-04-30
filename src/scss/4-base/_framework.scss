@@ -17,10 +17,26 @@ body {
 	font-family: $font-family;
 	font-size: rem($font-size-base);
 	font-weight: $font-weight-regular;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.container--sm {
+	max-width: $container-sm;
+}
+
+.container--md {
+	max-width: $container-md;
+}
+
+.container--lg {
+	max-width: $container-lg;
 }
 
 // ------------------------------------------------------------------
