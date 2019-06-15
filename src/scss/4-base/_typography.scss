@@ -9,9 +9,6 @@
 }
 @mixin h1 () {
 	@include font-size($font-size-h1--small);
-	display: inline-block;
-	color: $color-secondary;
-	border-bottom: 1px solid $color-secondary;
 	@include breakpoint-min(md) {
 		@include font-size($font-size-h1);
 	}
