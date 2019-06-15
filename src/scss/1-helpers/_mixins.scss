@@ -12,10 +12,6 @@
 // ------------------------------------------------------------------
 
 @mixin transition($property) {
-	-webkit-transition: all $property ease-in-out;
-	-moz-transition: all $property ease-in-out;
-	-ms-transition: all $property ease-in-out;
-	-o-transition: all $property ease-in-out;
 	transition: all $property ease-in-out;
 }
 
@@ -27,18 +23,6 @@
 	opacity: $opacity;
 	$opacity-ie: $opacity * 100;
 	filter: alpha(opacity=$opacity-ie); //IE8
-}
-
-// ------------------------------------------------------------------
-// FLEXBOX
-// ------------------------------------------------------------------
-
-@mixin flexbox() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
 }
 
 // ------------------------------------------------------------------

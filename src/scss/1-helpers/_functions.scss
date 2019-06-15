@@ -12,8 +12,8 @@
 	@return($target / $context) * 100%;
 }
 
-// REM font-size
+// Calculate PX to REM
 @function rem($size) {
 	$rem: $size / $font-size-base;
-	@return $rem * 1rem;
+	@return #{$rem}rem;
 }
