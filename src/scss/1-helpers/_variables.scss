@@ -6,7 +6,7 @@ $breakpoint-xs: 		0;
 $breakpoint-sm: 		576px;
 $breakpoint-md: 		767px;
 $breakpoint-lg: 		992px;
-$breakpoint-xl: 		1400px;
+$breakpoint-xl: 		1200px;
 
 // ------------------------------------------------------------------
 // CONTAINER BREAKPOINTS
@@ -15,7 +15,7 @@ $breakpoint-xl: 		1400px;
 $container-sm:			540px;
 $container-md:			720px;
 $container-lg:			960px;
-$container-xl: 			1340px;
+$container-xl: 			1140px;
 
 // ------------------------------------------------------------------
 // FRAMEWORK
@@ -41,17 +41,26 @@ $color-link:			$color-primary;
 
 $font-family: 			'Arial', sans-serif;
 
-$font-size-base: 		16px; // Will be converted to REM with mixin
-$font-size-h1: 			$font-size-base * 2.5 !default;
-$font-size-h2: 			$font-size-base * 2 !default;
-$font-size-h3: 			$font-size-base * 1.75 !default;
-$font-size-h4: 			$font-size-base * 1.5 !default;
-$font-size-h5: 			$font-size-base * 1.25 !default;
-$font-size-h6: 			$font-size-base !default;
+$font-size-base: 		16px;
+$font-size-h1: 			24px;
+$font-size-h2: 			20px;
+$font-size-h3: 			18px;
+$font-size-h4: 			17px;
+$font-size-h5: 			16px;
+$font-size-h6: 			15px;
 
-$font-line-height: 		1.5rem;
-$heading-line-height:	1.5rem;
+$font-size-h1--small:	24px;
+$font-size-h2--small:	20px;
+$font-size-h3--small:	18px;
 
+$font-size-p:			16px;
+$font-size-blockquote:	20px;
+
+// Font line heights
+$font-line-height: 		1.5;
+$heading-line-height:	1.2;
+
+// Font weights
 $font-weight-light:		300;
 $font-weight-regular:	400;
-$font-weight-bold:		700;
+$font-weight-bold: 		700;
