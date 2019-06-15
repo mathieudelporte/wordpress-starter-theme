@@ -1,8 +1,8 @@
 <?php get_header(); the_post(); ?>
 
 	<!-- Content -->
-	<main class="full-width white pad-full">
-		<div class="wrapper">
+	<main class="pf">
+		<div class="container">
 			<?php the_content(); ?>
 		</div>
 	</main>
