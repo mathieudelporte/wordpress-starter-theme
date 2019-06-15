@@ -38,18 +38,3 @@ img {
 .container--lg {
 	max-width: $container-lg;
 }
-
-// ------------------------------------------------------------------
-// FLEX COLUMNS
-// ------------------------------------------------------------------
-
-.flex {
-	@include flexbox;
-
-	&.center {
-		align-items: center;
-	}
-	&.stretch {
-		align-items: stretch;
-	}
-}
