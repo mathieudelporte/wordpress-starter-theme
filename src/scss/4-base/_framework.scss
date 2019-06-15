@@ -29,13 +29,28 @@ img {
 }
 
 .container--sm {
-	max-width: $container-sm;
+	@include breakpoint-min(sm) {
+		max-width: $container-sm;
+	}
 }
 
 .container--md {
-	max-width: $container-md;
+	@include breakpoint-min(sm) {
+		max-width: $container-sm;
+	}
+	@include breakpoint-min(md) {
+		max-width: $container-md;
+	}
 }
 
 .container--lg {
-	max-width: $container-lg;
+	@include breakpoint-min(sm) {
+		max-width: $container-sm;
+	}
+	@include breakpoint-min(md) {
+		max-width: $container-md;
+	}
+	@include breakpoint-min(lg) {
+		max-width: $container-lg;
+	}
 }
