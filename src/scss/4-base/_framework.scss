@@ -1,21 +1,10 @@
 // ------------------------------------------------------------------
-// CLEARFIX
-// ------------------------------------------------------------------
-
-.cf {
-	@include clearfix;
-}
-.clear {
-	clear: both;
-}
-
-// ------------------------------------------------------------------
 // GENERAL
 // ------------------------------------------------------------------
 
 body {
 	font-family: $font-family;
-	font-size: rem($font-size-base);
+	@include font-size($font-size-base);
 	font-weight: $font-weight-regular;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -27,6 +16,10 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+// ------------------------------------------------------------------
+// CONTAINER WIDTHS
+// ------------------------------------------------------------------
 
 .container--sm {
 	@include breakpoint-min(sm) {
